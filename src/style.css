@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Amex;
+    src: url(../public/fonts/AmexEmbossing.TTF);
+}
+/* dynamic style  */
+
+body{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.cst-style{
+    margin-bottom: 0 !important;
+}
+
+.custom-font-style{
+    font-family: Amex;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+}
+.custom-btn-style{
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    background-color: #238A1C;
+    border: none;
+}
+.box-container{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+}
+.box-container>.cbox{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 25%;
+    height: 150px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: #fff;
+    box-shadow: 2px 5px 10px grey;
+}
+.box-container>.box-1{
+        background: linear-gradient(160deg, blueviolet,blue);
+}
+.box-container>.box-2{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(160deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+.box-container>.box-3{
+        background-image: linear-gradient( 320deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );lue);
+}
+.box-container>.cbox>h3{
+    font-size: 1rem;
+    color: #fff;
+}
+.box-container>.cbox>h1{
+    font-size: 3rem;
+    color: #fff;
+}
+.deposit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.deposit-container>.dbox{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px gray;
+}
+.deposit-container>.dbox>button{
+    background-color: #238A1C;
+    width: 30%;
+    margin-top: 20px;
+}
+.deposit-container>.dbox>h3{
+    margin: 0;
+}
+.dashboard{
+    display: none;
+}
+.dashboard>.float-right{
+    margin: 50px;
+    float: right;
+}
+.dashboard>.dashboard-content{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+footer>p{
+    background-color: rgba(28,103,88,0.2);
+    margin: 0;
+    padding: 5px;
+    color: crimson;
+}
+
+@media (max-width: 720px) {
+    .box-container{
+        flex-direction: column;
+        padding: 100px 0px;
+        align-items: center;
+    }
+    .box-container>.cbox{
+        width:80%;
+    }
+    .deposit-container{
+        flex-direction: column;
+    }
+    .deposit-container>.dbox{
+        width: 80%
+    }
+    .dashboard>.float-right{
+    margin: 10px;
+    float: right;
+}
+
+}

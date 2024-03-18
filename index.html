@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pioneer Bank || USA - Jackson State</title>
+    <link rel="shortcut icon" href="./public/images/fav.ico" type="image/x-icon">
+
+    <!-- Google API Fonts Section  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap API Styles Section  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Developer Styles Section  -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+
+<body>
+
+    <section class="h-100 gradient-form" id="login-area">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-12">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                            style="width: 185px;" alt="logo">
+                                        <h1 class="mt-1 mb-5 pb-1">Welcome to Pioneer Bank</h1>
+                                    </div>
+
+                                    <form action="#">
+                                        <p>Please login to your account</p>
+
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="user">Username</label>
+                                            <input type="email" id="user" class="form-control"
+                                                placeholder="Phone number or email address" required />
+
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="password">Password</label>
+                                            <input type="password" id="password" class="form-control"
+                                                placeholder="Enter your password" required />
+
+                                        </div>
+
+                                        <div class="text-center pt-1 mb-5 pb-1">
+                                            <button type="button" id="loginBtn"
+                                                class="btn btn-primary btn-lg font-weight-bold custom-btn-style">Login</button><br>
+                                            <a class="text-muted" href="./forgot-password.html">Forgot password?</a>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">Don't have an account?</p>
+                                            <a href="./create-an-account.html" class="btn btn-outline-danger">Create
+                                                new</a>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Deposit Area -->
+    <section id="dashboard" class="dashboard">
+        <button id="logout" class="btn btn-warning float-right ml-2">Logout</button>
+        <div class="text-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                style="width: 185px;" alt="logo">
+            <h1 class="mt-1 mb-5 pb-1 cst-style">Welcome to Pioneer Online Banking Dashboard</h1>
+        </div>
+        <div class="dashboard-content text-center">
+            <div class="box-container">
+                <div class="cbox box-1">
+                    <h3>Deposit</h3>
+                    <h1>$ <span id="recentDeposit">00</span></h1>
+                </div>
+                <div class="cbox box-2">
+                    <h3>Withdrawal</h3>
+                    <h1>$ <span id="recentWithdrawal">00</span></h1>
+                </div>
+                <div class="cbox box-3">
+                    <h3>Balance</h3>
+                    <h1>$ <span id="totalBalance">1240</span></h1>
+                </div>
+            </div>
+            <div class="deposit-container">
+                <div class="dbox box-1">
+                    <h3>Deposit</h3>
+                    <input type="number" class="form-control" id="depositAmount"
+                        placeholder="$ amount you want to deposit">
+                    <button id="depositBtn" class="btn btn-success">Deposit</button>
+                </div>
+                <div class="dbox box-1">
+                    <h3>Withdraw</h3>
+                    <input type="number" class="form-control" id="withdrawAmount"
+                        placeholder="$ amount you want to withdraw">
+                    <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p class="text-center" style="font-family: Roboto;">@All Right Reserved by Pioneer Bank Ltd.</p>
+    </footer>
+
+
+
+    <!-- Scripting Section  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="./src/javascript.p.b.min.js"></script>
+</body>
+
+</html>
