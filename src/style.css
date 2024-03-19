@@ -132,3 +132,8 @@ footer>p{
 }
 
 }
+@media (max-width: 480px){
+    .deposit-container>.dbox>button{
+        width: 50%;
+    }
+}
